@@ -10,4 +10,10 @@ secondary:
   replicaCount: 2
   persistence:
     storageClass: standard
-  
+global:
+  security:
+    allowInsecureImages: True
+image:
+  registry: docker.io
+  tag: latest
+  repository: bitnamilegacy/mysql 
