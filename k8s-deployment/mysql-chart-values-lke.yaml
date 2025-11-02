@@ -16,3 +16,10 @@ secondary:
     accessModes: ["ReadWriteOnce"]
     # storage class for LKE volumes
     storageClass: linode-block-storage
+global:
+  security:
+    allowInsecureImages: True
+image:
+  registry: docker.io
+  tag: latest
+  repository: bitnamilegacy/mysql 

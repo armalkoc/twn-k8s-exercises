@@ -46,14 +46,14 @@ https://github.com/bitnami/charts/tree/master/bitnami/mysql
 **Minikube**
 ```sh
 helm repo add bitnami https://charts.bitnami.com/bitnami
-helm install my-release bitnami/mysql -f mysql-chart-values-minikube.yaml
+helm install my-release -f mysql-chart-values-minikube.yaml
 
 ```
 
 **LKE**
 ```sh
 helm repo add bitnami https://charts.bitnami.com/bitnami
-helm install my-release bitnami/mysql -f mysql-chart-values-lke.yaml
+helm install my-release -f mysql-chart-values-lke.yaml
 
 ```
 </details>
