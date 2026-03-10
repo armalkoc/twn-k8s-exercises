@@ -1,0 +1,5 @@
+Exercise 3: Deploy your Java Application with 2 replicas 
+
+Secrets for java application are stored in the db-secret.yaml file. In the Deployment of the java application we used variables which
+are defined in the java application code in the DatabaseConfig.java, so these variables are not random, they are defined in the java code!
+
