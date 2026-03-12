@@ -3,3 +3,18 @@ Exercise 3: Deploy your Java Application with 2 replicas
 Secrets for java application are stored in the db-secret.yaml file. In the Deployment of the java application we used variables which
 are defined in the java application code in the DatabaseConfig.java, so these variables are not random, they are defined in the java code!
 
+Exercise 6: Create Ingress rule 
+
+In this exercise we have to add minikube ip in the /etc/hosts/ file instead loopback IP. Minikube ip we get using command "minikube ip"
+and than mapp it in the hosts file 192.168.49.2 my-java-app.com. When we test using curl command it should get status 200.
+
+EXERCISE 7: Port-forward for phpmyadmin
+
+We want to configure port forwarding and forward every request which commes on localhost:8081 to the svc/phpmyadmin-service port 8081 and 
+this is done using command:
+
+kubectl port-forward svc/phpmyadmin-service 8081:8081
+
+Now we can access to the phpmyadmi UI using http://localhost:8081 and root username and root password that we configured in the phpmyadmin
+deployment.
+

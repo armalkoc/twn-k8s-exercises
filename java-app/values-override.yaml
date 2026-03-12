@@ -1,0 +1,28 @@
+appName: java-app 
+appReplicas: 2
+registrySecret: armin-hub-reg
+appContainerName: java-mysql-app 
+appImage: amalkoc/k8s-exercises
+appVersion: 1.0
+containerPort: 8080
+
+servicePort: 8080
+
+configName: db-config
+configData:
+  DB_SERVER: amsql-release-mysql-primary.default
+
+secretName: db-secret
+secretData:
+  DB_USER: my-user
+  DB_PWD: my-pass 
+  DB_NAME: my-app-db
+  MYSQL_ROOT_PASSWORD: secret-root-pass
+
+regularData: {}
+
+ingress: 
+  hostName: my-java-app.com
+  pathType: Exact 
+  path: / 
+  className: nginx

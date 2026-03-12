@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.configName }}
+data:
+  #check the name of the mysql service with the 'kubectl get svc' command
+  {{- range $key, $value := .Values.configData}}
+  {{ $key }}: {{ $value | quote }}
+  {{- end }}
