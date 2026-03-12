@@ -18,3 +18,20 @@ kubectl port-forward svc/phpmyadmin-service 8081:8081
 Now we can access to the phpmyadmi UI using http://localhost:8081 and root username and root password that we configured in the phpmyadmin
 deployment.
 
+
+Exercise 8: Create Helm Chart for Java App 
+
+We did this exercise in this directory on localhost 
+
+armin@nb-pf565v12:~/github_twn/kubernetes_exercises/kubernetes-exercises$ ls -lrth
+total 36K
+-rw-rw-r-- 1 armin armin  246 Mar 10 11:25 settings.gradle
+-rw-rw-r-- 1 armin armin  109 Mar 10 11:25 README.md
+-rw-rw-r-- 1 armin armin  228 Mar 10 11:25 Dockerfile
+-rw-rw-r-- 1 armin armin  751 Mar 10 11:25 build.gradle
+drwxrwxr-x 4 armin armin 4,0K Mar 10 11:25 src
+-rw-rw-r-- 1 armin armin 4,9K Mar 10 11:27 solutions.md
+drwxrwxr-x 2 armin armin 4,0K Mar 11 10:44 k8s-deployment
+drwxr-xr-x 3 armin armin 4,0K Mar 12 00:19 java-app
+
+
