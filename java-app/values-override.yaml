@@ -3,7 +3,7 @@ appReplicas: 2
 registrySecret: armin-hub-reg
 appContainerName: java-mysql-app 
 appImage: amalkoc/k8s-exercises
-appVersion: 1\.0
+appVersion: "1.0"
 containerPort: 8080
 
 servicePort: 8080
